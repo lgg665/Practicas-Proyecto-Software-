@@ -1,0 +1,348 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <!-- Configuración de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Título de la página -->
+    <title>Mi Compañía</title>
+
+</head>
+
+<body>
+
+    <!-- ==============================
+         ENCABEZADO
+         ============================== -->
+
+    <header>
+
+        <!-- Logo de la compañía -->
+        <img src="img/logo.png"
+             alt="Logo de Mi Compañía"
+             width="100">
+
+        <!-- Título de la compañía -->
+        <h1>Mi Compañía</h1>
+
+    </header>
+
+
+    <!-- ==============================
+         BARRA DE NAVEGACIÓN
+         ============================== -->
+
+    <nav>
+
+        <a href="#inicio">Home</a>
+
+        <a href="#staff">Staff</a>
+
+        <!-- Submenú de Servicios -->
+        <a href="#servicios">Servicios</a>
+
+        <a href="#contacto">Contacto</a>
+
+        <ul>
+
+            <li>
+                <a href="#ecommerce">
+                    Plataforma de E-commerce
+                </a>
+            </li>
+
+            <li>
+                <a href="#desarrollos">
+                    Desarrollos a medida
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <!-- ==============================
+         CONTENIDO PRINCIPAL
+         ============================== -->
+
+    <main>
+
+        <!-- Sección Home -->
+        <section id="inicio">
+
+            <h2>Bienvenidos</h2>
+
+            <p>
+                Bienvenidos al sitio web de Mi Compañía.
+            </p>
+
+            <p>
+                Ofrecemos soluciones tecnológicas para empresas
+                y emprendimientos.
+            </p>
+
+        </section>
+
+
+        <!-- ==============================
+             STAFF
+             ============================== -->
+
+        <section id="staff">
+
+            <h2>Nuestro Staff</h2>
+
+            <!-- Primer miembro del equipo -->
+            <article>
+
+                <h3>Juan Pérez</h3>
+
+                <p>
+                    Desarrollador Backend.
+                </p>
+
+                <p>
+                    Incorporación:
+                    <time datetime="2025-03-10">
+                        10 de marzo de 2025
+                    </time>
+                </p>
+
+            </article>
+
+
+            <!-- Segundo miembro del equipo -->
+            <article>
+
+                <h3>María Gómez</h3>
+
+                <p>
+                    Diseñadora UX/UI.
+                </p>
+
+                <p>
+                    Incorporación:
+                    <time datetime="2025-06-15">
+                        15 de junio de 2025
+                    </time>
+                </p>
+
+            </article>
+
+
+            <!-- Tercer miembro del equipo -->
+            <article>
+
+                <h3>Pedro López</h3>
+
+                <p>
+                    Desarrollador Frontend.
+                </p>
+
+                <p>
+                    Incorporación:
+                    <time datetime="2026-01-20">
+                        20 de enero de 2026
+                    </time>
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- ==============================
+             SERVICIOS
+             ============================== -->
+
+        <section id="servicios">
+
+            <h2>Servicios</h2>
+
+
+            <!-- Servicio de E-commerce -->
+            <article id="ecommerce">
+
+                <h3>Plataforma de E-commerce</h3>
+
+                <p>
+                    Ofrecemos plataformas de comercio electrónico
+                    adaptadas a las necesidades de cada empresa.
+                </p>
+
+            </article>
+
+
+            <!-- Servicio de desarrollos -->
+            <article id="desarrollos">
+
+                <h3>Desarrollos a medida</h3>
+
+                <p>
+                    Desarrollamos aplicaciones y sistemas
+                    personalizados según las necesidades
+                    de nuestros clientes.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- ==============================
+             ASIDE
+             ============================== -->
+
+        <aside>
+
+            <h2>Información adicional</h2>
+
+            <p>
+                Nuestro equipo trabaja en proyectos de
+                desarrollo web y soluciones empresariales.
+            </p>
+
+            <p>
+                Atención:
+                <time datetime="09:00">09:00</time>
+                a
+                <time datetime="18:00">18:00</time>.
+            </p>
+
+        </aside>
+
+
+        <!-- ==============================
+             CONTACTO
+             ============================== -->
+
+        <section id="contacto">
+
+            <h2>Contacto</h2>
+
+            <form>
+
+                <!-- Nombre -->
+                <label for="nombre">
+                    Nombre:
+                </label>
+
+                <input type="text"
+                       id="nombre"
+                       name="nombre"
+                       required>
+
+                <br><br>
+
+
+                <!-- Correo -->
+                <label for="email">
+                    Correo electrónico:
+                </label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+
+                <!-- Teléfono -->
+                <label for="telefono">
+                    Teléfono:
+                </label>
+
+                <input type="tel"
+                       id="telefono"
+                       name="telefono">
+
+                <br><br>
+
+
+                <!-- Edad -->
+                <label for="edad">
+                    Edad:
+                </label>
+
+                <input type="number"
+                       id="edad"
+                       name="edad"
+                       min="18"
+                       max="100">
+
+                <br><br>
+
+
+                <!-- Fecha -->
+                <label for="fecha">
+                    Fecha de contacto:
+                </label>
+
+                <input type="date"
+                       id="fecha"
+                       name="fecha">
+
+                <br><br>
+
+
+                <!-- Mensaje -->
+                <label for="mensaje">
+                    Mensaje:
+                </label>
+
+                <br>
+
+                <textarea id="mensaje"
+                          name="mensaje"
+                          rows="5"
+                          cols="40"></textarea>
+
+                <br><br>
+
+
+                <!-- Botón -->
+                <input type="submit"
+                       value="Enviar">
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         PIE DE PÁGINA
+         ============================== -->
+
+    <footer>
+
+        <p>
+            Copyright © 2026 Mi Compañía
+        </p>
+
+        <p>
+            Teléfono:
+            <a href="tel:+5492920123456">
+                +54 9 2920 123456
+            </a>
+        </p>
+
+        <p>
+            Correo electrónico:
+            <a href="mailto:contacto@micompania.com">
+                contacto@micompania.com
+            </a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```

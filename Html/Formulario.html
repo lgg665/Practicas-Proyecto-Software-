@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+    </head>
+    <!-- Formulario llamado Datos Personales
+ que tendra campos para: nombre y apellido, 
+ mail, fecha de nacimiento(dd/mm/aaaa), descripcion,
+ Sexo(Masculino o Femenino), Indique su profesion(escoja tods las que procedan)
+Medico, Programador, y Ingienero, y por ultimo Provincia  -->
+    <body>
+        <form>  
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="fname">Nombre, Apellido:</label><br>
+              <input type="text" id="fname" name="fname" value=""><br>
+              <label for="mail">Mail:</label><br> 
+              <input type="email" id="mail" name="mail"><br> 
+              <label for="fecha">Fecha de Nacimiento:</label><br>
+              <input type="date" id="fecha" name="fecha"><br>
+              <label for="descripcion">Descripcion:</label><br>
+              <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br>
+              <label for="sexo">Sexo:</label><br>
+              <input type="radio" id="masculino" name="sexo" value="Masculino">
+              <label for="masculino">Masculino</label><br>
+              <input type="radio" id="femenino" name="sexo" value="Femenino">
+              <label for="femenino">Femenino</label><br>
+              <label for="profesion">Indique su profesion (escoja tods las que procedan)</label><br>
+              <input type="checkbox" id="medico" name="profesion" value="Medico">
+              <label for="medico">Medico</label><br>
+              <input type="checkbox" id="programador" name="profesion" value="Programador">
+              <label for="programador">Programador</label><br>
+              <input type="checkbox" id="ingeniero" name="profesion" value="Ingeniero">
+              <label for="ingeniero">Ingeniero</label><br>
+              <label for="provincia">Provincia:</label><br>
+              <select id="provincia" name="provincia">
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Rio Negro">Rio Negro</option>
+                <option value="Mendoza">Mendoza</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+            </fieldset>            
+        </form>
+    </body>
+</html>
