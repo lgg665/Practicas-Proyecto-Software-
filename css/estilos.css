@@ -1,0 +1,143 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: white;
+}
+
+
+/* =========================
+   MENÚ LATERAL
+========================= */
+
+.page-sidebar-menu {
+    width: 235px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    background: #3b3b3b;
+}
+
+
+/* =========================
+   ELEMENTOS DEL MENÚ
+========================= */
+
+.page-sidebar-menu li {
+    height: 43px;
+
+    border-bottom: 1px solid #555;
+}
+
+
+/* =========================
+   ENLACES
+========================= */
+
+.page-sidebar-menu li a {
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 15px;
+
+    color: #eeeeee;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: background-color 0.2s;
+}
+
+
+/* =========================
+   ICONOS
+========================= */
+
+.page-sidebar-menu i {
+    width: 28px;
+
+    margin-right: 0;
+
+    color: #aaaaaa;
+
+    font-size: 16px;
+
+    text-align: center;
+}
+/* =========================
+   ICONOS CON CSS
+========================= */
+
+.icon-home::before {
+    content: "⌂";
+}
+
+.icon-herramientas::before {
+    content: "⚙";
+}
+
+.icon-usuarios::before {
+    content: "♟";
+}
+
+.icon-mapas::before {
+    content: "⌖";
+}
+
+.icon-calendario::before {
+    content: "▦";
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.page-sidebar-menu .title {
+    margin-left: 0;
+}
+
+
+/* =========================
+   HOVER
+========================= */
+
+.page-sidebar-menu li:not(.active) a:hover {
+    background: #484848;
+}
+
+
+/* =========================
+   ELEMENTO ACTIVO
+========================= */
+
+.page-sidebar-menu li.active {
+    background: #ed1c24;
+
+    border-bottom: none;
+}
+
+.page-sidebar-menu li.active a {
+    color: white;
+}
+
+.page-sidebar-menu li.active i {
+    color: white;
+}
