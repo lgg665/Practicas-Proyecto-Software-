@@ -1,0 +1,274 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    padding: 20px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: white;
+}
+
+
+/* =========================
+   CONTENEDOR
+========================= */
+
+.chat-container {
+    width: 480px;
+
+    margin: 0 auto;
+
+    background: white;
+}
+
+
+/* =========================
+   ÁREA DE MENSAJES
+========================= */
+
+.scroller {
+    height: 410px;
+
+    overflow-y: auto;
+
+    padding: 5px 10px;
+}
+
+.chats {
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+/* =========================
+   MENSAJES
+========================= */
+
+.chats li {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+
+    min-height: 55px;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* =========================
+   CUERPO
+========================= */
+
+.message {
+    position: relative;
+
+    max-width: 410px;
+
+    padding: 6px 8px;
+
+    background: #f7f7f7;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #222;
+}
+
+
+/* =========================
+   ENCABEZADO DEL MENSAJE
+========================= */
+
+.message-header {
+    margin-bottom: 2px;
+
+    color: #4285c5;
+
+    font-size: 10px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   MENSAJES ENTRANTES
+========================= */
+
+.chats li.in {
+    justify-content: flex-start;
+}
+
+.chats li.in .message {
+    border-left: 3px solid #35b75b;
+}
+
+.chats li.in .message::before {
+    content: "";
+
+    position: absolute;
+
+    left: -9px;
+
+    top: 8px;
+
+    border-top: 7px solid transparent;
+
+    border-bottom: 7px solid transparent;
+
+    border-right: 7px solid #35b75b;
+}
+
+
+/* =========================
+   MENSAJES SALIENTES
+========================= */
+
+.chats li.out {
+    justify-content: flex-end;
+}
+
+.chats li.out .message {
+    order: 1;
+
+    text-align: right;
+
+    border-right: 3px solid #ed3b3b;
+}
+
+.chats li.out .avatar {
+    order: 2;
+}
+
+.chats li.out .message::after {
+    content: "";
+
+    position: absolute;
+
+    right: -9px;
+
+    top: 8px;
+
+    border-top: 7px solid transparent;
+
+    border-bottom: 7px solid transparent;
+
+    border-left: 7px solid #ed3b3b;
+}
+
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.chat-form {
+    margin: 10px;
+
+    padding: 10px;
+
+    background: #edf2f5;
+}
+
+
+/* =========================
+   INPUT USUARIO
+========================= */
+
+.user-input {
+    width: 100%;
+
+    margin-bottom: 1px;
+}
+
+.user-input input {
+    width: 100%;
+
+    height: 34px;
+
+    padding: 8px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   INPUT MENSAJE
+========================= */
+
+.message-input {
+    display: flex;
+
+    width: 100%;
+}
+
+.message-input input {
+    flex: 1;
+
+    height: 34px;
+
+    padding: 8px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.message-input button {
+    width: 55px;
+
+    height: 34px;
+
+    border: none;
+
+    background: #4d8df5;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+.message-input button:hover {
+    background: #367ce0;
+}

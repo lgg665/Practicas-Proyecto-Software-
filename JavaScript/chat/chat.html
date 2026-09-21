@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="chat.css">
+
+</head>
+
+<body>
+
+    <main class="chat-container">
+
+        <!-- =========================
+             MENSAJES
+        ========================== -->
+
+        <div class="scroller">
+
+            <ul class="chats" id="chat">
+
+                <li class="in">
+
+                    <img class="avatar" src="../assets/images/avatar2.jpg" alt="Avatar de Nico Garcia">
+
+                    <div class="message">
+
+                        <div class="message-header">
+                            Nico Garcia el Jul 25, 2012 11:09
+                        </div>
+
+                        <span class="body">
+                            Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna
+                            aliquam erat volutpat.
+                        </span>
+
+                    </div>
+
+                </li>
+
+
+                <li class="out">
+
+                    <img class="avatar" src="../assets/images/avatar1.jpg" alt="Avatar de Luis Perez">
+
+                    <div class="message">
+
+                        <div class="message-header">
+                            Luis Perez el Jul 25, 2012 11:09
+                        </div>
+
+                        <span class="body">
+                            Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit,
+                            sed diam nonummy nibh euismod
+                            tincidunt ut laoreet dolore magna
+                            aliquam erat volutpat.
+                        </span>
+
+                    </div>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+
+        <!-- =========================
+             FORMULARIO
+        ========================== -->
+
+        <div class="chat-form">
+
+            <!-- Nombre -->
+
+            <div class="user-input">
+
+                <input
+                    type="text"
+                    id="usuario_txt"
+                    placeholder="usuario...">
+
+            </div>
+
+
+            <!-- Mensaje -->
+
+            <div class="message-input">
+
+                <input
+                    type="text"
+                    id="mensaje_txt"
+                    placeholder="Ingrese el Mensaje...">
+
+                <button onclick="agregarMensaje()">
+                    Enviar
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="chat.js"></script>
+
+</body>
+
+</html>
